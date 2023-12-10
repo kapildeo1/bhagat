@@ -1,7 +1,7 @@
 FROM node:12.2.0-alpine
-WORKDIR app
+WORKDIR vite.config
 COPY . .
 RUN npm install
 RUN npm run test
 EXPOSE 5173
-CMD ["node","app.js"]
+CMD ["node","vite.config.js"]
